@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Floating</title>
+        <style>
+            .fb{
+               background-color: #3B5998;
+               height: 100px;
+                width: auto;
+                /*This makes the div float to left and occupy only as much place needed.*/
+                float: left;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+               height: 100px;
+                width: auto;
+                float: right;
+            }
+            /*After the float right property is set the apple div appears in between the fb and microsoft div. because,the element occupies the first available space on the page.In order for it to be placed later we can use the clear property*/
+            .ap{
+               background-color: #49ce4b;
+               height: 100px;
+                width: auto;
+                /*This property tells no element is allowed before or after this element*/
+                clear: both;
+            }
+            .grt{
+                background-color: #0d4fc8;
+               height: 100px;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Elements on the html page float and is relative to the containing element.Elements can float only horizontally and occupy the first available space on the page.</p>
+        <div class="fb">
+            <p>Facebook is <span class="grt">Great</span></p>
+        </div>
+        <div class="msf">
+            <p>microsoft</p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</html>

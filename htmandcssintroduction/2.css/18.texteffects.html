@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Text Effects.</title>
+        <style>
+            .fb{
+               background-color: #3B5998;
+               height: 100px;
+               width: auto;
+/*If the text is overflowing outside the container then we use the following property to not show the overflow.*/
+               overflow: hidden;
+/*If the statements are wrapped within the container and we do not need the wrap then we use the following property*/
+               white-space: nowrap;
+/*To show that there is an overflowing text followed then we use the following property*/
+                text-overflow: ellipsis;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+               height: 100px;
+                width: 350px;
+/*               TO break longer words use the following properties */
+                word-break: break-all;
+                overflow: hidden;
+            }
+/*            to display the overflow area when hovered over the div*/
+            .msf:hover{
+                overflow: visible;
+                word-break: keep-all;
+            }
+            .ap{
+               background-color: #49ce4b;
+               height: 100px;
+                width: auto;
+            }
+            .grt{
+                background-color: #0d4fc8;
+               height: 100px;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Text effect like overflow,white-wrap etc are used to control how the content is displayed on the page.like if there is a text overflowing or breaking words etc</p>
+        <div class="fb">
+           Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook 
+
+        </div>
+        <div class="msf">
+            <p>microsoft microsoft microsoft microsoft microsoft microsoft microsoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoftmicrosoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft microsoft </p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</html>

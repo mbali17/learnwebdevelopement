@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Inline css</title>
+       
+        <style>
+            p{
+                color:green;
+                font-size:300%;
+            }
+            <!--Styling using id -->
+            #secondpara{
+                color:red;
+                font-size:250%;
+            }
+            <!--Styling using classes -->
+            .thirdpara{
+                color: aquamarine;
+                font-size: 200%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--!00% font-size is 14px and hence 300% is 3*14px -->
+        <p>We can provide styling by defining the tag. What this does is it provides the same style for the given tags in the document   </p>
+        <p id="secondpara">The other way to style an element is using the id.It is an attribute for the tag. Each tag can only have one id.</p>
+        <p class="thirdpara">Styling can also be provided using the classes and this is set using the class attribute of the tag and there could be multiple tag with same class and the styling would be applied to all the tags with the given class.</p>
+    </body>
+<html>

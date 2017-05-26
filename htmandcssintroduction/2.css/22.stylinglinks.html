@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>divs and spans</title>
+        <style>
+/*            TO set styling for all the links in the page*/
+            a{
+                color: #ce0d0d;
+            }
+/*            What action to be performed when the links are hovered*/
+            a:hover{
+                font-size: 3em;
+                color: #a8f362;
+            }
+            .fb{
+               background-color: #3B5998;
+               height: 100px;
+                width: auto;
+            }
+            /*To style the links within a given div.
+            Note: Certain propeties might not work for the visted action.*/
+            div.fb a:visited{
+                color: #f876e9;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+               height: 100px;
+                width: auto;
+            }
+            .ap{
+               background-color: #49ce4b;
+               height: 100px;
+                width: auto;
+            }
+            .grt{
+                background-color: #0d4fc8;
+               height: 100px;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Links as we know are used to navigate to different pages on the web.</p>
+        <div class="fb">
+            <p>Facebook is <span class="grt">Great</span></p>
+            <p>
+                <a href="http://www.fb.com">Visit site</a>
+            </p>
+        </div>
+        <div class="msf">
+            <p>microsoft</p>
+              <p>
+                <a href="http://www.microsoft.com">Visit site</a>
+            </p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+              <p>
+                <a href="http://www.apple.com">Visit site</a>
+            </p>
+        </div>
+    </body>
+</html>

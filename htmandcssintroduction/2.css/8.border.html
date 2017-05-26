@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>divs and spans</title>
+        <style>
+             .fb{
+               background-color: #3B5998;
+                padding: 20px;
+/*                 Setting border using single line. first param is the width then the color, followed by rhe style.*/
+                 border: 10px red ridge;
+                width: auto;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+                padding: 40px 30px 20px 10px;
+/*               Border width using 4 values, each value reperesenting a side in the box model.*/
+                border-width: 40px 30px 20px 10px;
+                border-color: aliceblue antiquewhite aqua bisque;
+/*                Until the border style is not set the border does not show up on the screen*/
+                border-style:ridge;
+                width: auto;
+            }
+            /*By setting the border-radius property and setting the width and height appropriatelly we can forma circle.*/
+            .ap{
+               background-color: #49ce4b;
+               padding: 20px 10px;
+               height: 30px;
+               width: 30px;
+                border-style: groove;
+                border-width: 40px;
+               border-radius: 100px
+            }
+            /*Since 'p' tags have a default margin set we can set the margin to zero*/
+            p{
+                margin: 0;
+                /*setting background to see the changes.*/
+                background-color: #47eab1;
+            }
+        </style>
+    </head>
+    <body>
+        <p> Border is an element between the padding and the margin and is invisible initially unless it is set.
+        NOTE:Border is not seen unless an border style is set.
+        </p>
+        <div class="fb">
+            <p>Facebook is</p>
+        </div>
+        <div class="msf">
+            <p>microsoft</p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</html>

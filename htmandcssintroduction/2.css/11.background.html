@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>divs and spans</title>
+        <style>
+             .fb{
+                padding: 20px;
+                border: 10px red ridge;
+                width: auto;
+                margin: 10px;
+                /*This is the way to set the background image in css*/
+                background-image: url(images/image.png);
+                /*THis is the width and height relative to the div*/
+                background-size: 100% 100%;
+            }
+            .msf{
+                background-image: url(images/image.png);
+                background-size: 50px 50px;
+                /*The above setiting causes the image to repeat hence to avoid repeat we can use the no-repeat property */
+                background-repeat: no-repeat;
+                /*The position of the background can also be fixed and would be centered based on this.*/
+                background-position: left;
+                /*The origin/beginning point of the background can be  fixed either relative to  border or padding or content*/
+                background-origin: content-box;
+                padding: 40px 30px 20px 10px;
+                border-width: 40px 30px 20px 10px;
+                border-color: aliceblue antiquewhite aqua bisque;
+                border-style:ridge;
+                width: auto;
+                margin: 40px 30px 20px 10px;
+            }
+            .ap{
+               background-color: #49ce4b;
+               padding: 20px 10px;
+               height: 30px;
+               width: 30px;
+               border-style: groove;
+               border-width: 40px;
+               border-radius: 100px;
+               margin: 10px 30px;
+            }
+            p{
+                margin: 0;
+                background-color: #47eab1;
+            }
+        </style>
+    </head>
+    <body>
+        <p> Background for an element can also be set using the background image property of css where there is a link to the image.
+        </p>
+        <div class="fb">
+            <p>Facebook </p>
+        </div>
+        <div class="msf">
+            <p>microsoft</p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Positioning</title>
+        <style>
+            .fb{
+               background-color: #3B5998;
+               height: 100px;
+               width: auto;
+               /*The position is fixed and all other elements ignore this element.*/
+               position: fixed;
+            /*The following propert sets the postion from the top and left of the page. */
+               top: 100px;
+               left:20px;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+               height: 100px;
+                width: auto;
+                /*This is setting the position relative to the original position of the element.*/
+                position: relative;
+                top:40px;
+                left: 30px;
+            }
+            .ap{
+               background-color: #49ce4b;
+               height: 100px;
+               width: auto;
+               /*This positioning is relative to the first non static element on the page.if there are no non static elements then the positioning would be relative to the html element.*/
+               position: absolute;
+               top:140px;
+               left:50px;
+/*                in order to decide which elements appear on top we can use the z-index property the element with highest z-index would appear on top and if there is no z-index set then the last element would appear on top.*/
+                
+            }
+            .grt{
+                background-color: #0d4fc8;
+               height: 100px;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Positioning means to set location for an element on the web page and how these elements are going to behave in the flow of the web page.There are 4 types of position  and static - which is the default is applied when the positioning is not specified.If an elements position is not specified then the element appears in the last.</p>
+        <div class="fb">
+            <p>Facebook is <span class="grt">Great</span></p>
+        </div>
+        <div class="msf">
+            <p>microsoft</p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</html>

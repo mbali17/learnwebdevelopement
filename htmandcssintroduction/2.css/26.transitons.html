@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>divs and spans</title>
+        <style>
+            .fb{
+                background-color: #3B5998;
+                height: 100px;
+                width: 100px;
+                /*We use the transition property to specify what property is transitioning and how long would it take for the transition to ocuur.*/
+                transition: width 1s;
+            }
+            /*After specifying the transition we would need to tell on what action the transition is applied.*/
+            .fb:hover{
+                width: 300px;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+                height: 100px;
+                width: 100px;
+                /*We can as well specify multiple properties which are coma separated.*/
+                transition: width 1s,height 2s,tansform 3s;
+            }
+            .msf:hover{
+                width: 150px;
+                height: 200px;
+                /*This property tells that the element needs to be rotated 180deg with respect to x-axis*/
+                transform: rotateX(180deg);
+            }
+            .ap{
+               background-color: #49ce4b;
+               height: 100px;
+                width: auto;
+            }
+            .grt{
+                background-color: #0d4fc8;
+               height: 100px;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Transitions are used to provide certain special effects when the elements are interacted with like hover.</p>
+        <div class="fb">
+            <p>Facebook is <span class="grt">Great</span></p>
+        </div>
+        <div class="msf">
+            <p>microsoft</p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</html>

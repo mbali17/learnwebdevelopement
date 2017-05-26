@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login Form</title>
+    </head>
+    <body>
+        <p>Forms are a collection of fields that are to be populated by the user and on submission it is sent to the server as data where it is processed.The tag used to create a form is form it is used for login/registration or search</p>
+        <!--Method is used to define what is the method to be used when submitting the form and when the password is present we do not use the get method-->
+        <form method="get">
+            <!-- name is used while submitting the form and is used at the server to know the inputs sent-->
+            <!--The value used in the for attribute is the id of the input to which the input is to be linked.-->
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter Email" size="30px" maxlength="100">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" size="30px" maxlength="10">
+            <input type="submit" value="Login">
+        </form>
+    </body>
+</html>

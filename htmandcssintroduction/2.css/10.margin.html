@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>divs and spans</title>
+        <style>
+             .fb{
+               background-color: #3B5998;
+                padding: 20px;
+                border: 10px red ridge;
+                width: auto;
+                 /*Setting margin for all the sides.*/
+                 margin: 10px;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+                padding: 40px 30px 20px 10px;
+                border-width: 40px 30px 20px 10px;
+                border-color: aliceblue antiquewhite aqua bisque;
+                border-style:ridge;
+                width: auto;
+                /*Setting margin for individual side*/
+                margin: 40px 30px 20px 10px;
+            }
+            .ap{
+               background-color: #49ce4b;
+               padding: 20px 10px;
+               height: 30px;
+               width: 30px;
+                border-style: groove;
+                border-width: 40px;
+               border-radius: 100px;
+                /*setting margin using two values*/
+                margin: 10px 30px;
+            }
+            p{
+                margin: 0;
+                /*setting background to see the changes.*/
+                background-color: #47eab1;
+            }
+        </style>
+    </head>
+    <body>
+        <p> Margin separates the elements on the web page and is outside the border for the given element.
+        </p>
+        <div class="fb">
+            <p>Facebook is</p>
+        </div>
+        <p>THe margin for the new element would be bottom margin for the top div+top margin of the bottom div</p>
+        <div class="msf">
+            <p>microsoft</p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>divs and spans</title>
+        <style>
+            .fb{
+               background-color: #3B5998;
+               height: 100px;
+                width: auto;
+                font-size: 100px;
+                font-family: sans-serif;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+               height: 100px;
+                width: auto;
+                font-size: 100px;
+                font-family: sans-serif;
+            }
+            .ap{
+               background-color: #49ce4b;
+               height: 100px;
+                width: auto;
+                font-size: 100px;
+/*                font-family: monospace;*/
+                /*There is another way of specifying the font family by providing fall back.*/
+                /*Also note that if the name of the font family has space in it then it would be wrapped in double quotes.*/
+                /*The following line is read as first check if there is times new roman if not available then apply serif, if not finally try the sans serif the final option provided should be generic family.*/
+                font-family: "Times New Roman" serif sans-serif;
+            }
+            .grt{
+                background-color: #0d4fc8;
+               height: 100px;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>font-family property is used to define a style for the text.</p>
+        <div class="fb">
+            <p>Facebook</p>
+        </div>
+        <div class="msf">
+            <p>microsoft</p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</html>

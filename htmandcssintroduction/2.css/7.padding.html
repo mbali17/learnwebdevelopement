@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Padding</title>
+        <style>
+            .fb{
+               background-color: #3B5998;
+                /*First way of setting the padding using single value where the given padding is applicable to all the 4 sides.*/
+                padding: 20px;
+                width: auto;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+/*                Second way of setting padding is using 4 values which specify padding for the specific side beginning from the 
+                top followed by right followed by bottom and finally the left side*/
+                padding: 40px 30px 20px 10px;
+                width: auto;
+            }
+            .ap{
+               background-color: #49ce4b;
+/*            Third way of setting the padding is using 2 values. which specify the value for top,bottom and left,right*/
+            padding: 20px 10px;
+               height: 100px;
+                width: auto;
+            }
+/*            Since 'p' tags have a default margin set we can set the margin to zero*/
+            p{
+                margin: 0;
+                background-color: #47eab1;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Padding is the distance between the content and the border.The total area of an element is the widht and height of the content+padding from all sides.</p>
+        <div class="fb">
+            <p>Facebook</p>
+        </div>
+        <div class="msf">
+            <p>microsoft</p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</htm

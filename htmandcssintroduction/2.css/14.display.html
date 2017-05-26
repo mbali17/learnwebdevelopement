@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>divs and spans</title>
+        <style>
+            .fb{
+               background-color: #3B5998;
+               height: 100px;
+                width: auto;
+                
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+               height: 100px;
+                width: auto;
+                /*This property is used when we want to hide the elements and as well as the space.*/
+                display: none;
+            }
+            .ap{
+               background-color: #49ce4b;
+               height: 100px;
+                width: auto;
+                /*This property is used when we just want to hide the content but preserve the place.*/
+                visibility: hidden;
+            }
+            .grt{
+                background-color: #0d4fc8;
+               height: 100px;
+                width: auto;
+                /*There is another property which would change an element behaves like if there is an inline element which needs to be displayed as block*/
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Display property is used when we would want to control the display of elements.</p>
+        <div class="fb">
+            <p>Facebook is <span class="grt">Great</span></p>
+        </div>
+        <div class="msf">
+            <p>microsoft</p>
+        </div>
+        <div class="ap">
+            <p>apple</p>
+        </div>
+    </body>
+</html>
