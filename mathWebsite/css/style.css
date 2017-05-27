@@ -1,0 +1,55 @@
+
+#container {
+    width : 1050px;
+    /*Just to see element on the page.*/
+    border: 1px solid grey;
+    /*To center the element on the page. we can use the margin with auto for left and the right side.*/
+    margin: 0px auto;
+}
+/*Note: An container consisting of floating elements only behaves as though there are no elments with in. Hence it collapses and the height needs to be set explicitly.*/
+#header{
+    height: 100px;
+    padding: 10px 0px;
+}
+#logo{
+    float: left;
+}
+
+#logo h1 a {
+    font-size: 50px;
+    font-weight: 200;
+    /*Property used to remove the default underlining for the a tag.    */
+    text-decoration: none;
+    color: #861BBF;
+}
+
+#searchbox {
+    float: right;
+    background: linear-gradient(#E4f2B9,#B7E953);
+    width: 400px;
+    height: 50px;
+    padding:15px 15px 10px 15px;
+    margin-top: 20px
+}
+
+.text{
+    float: left;
+    width: 200px;
+    font-size: 15px;
+    padding: 5px;
+    color: #E37C6E;
+    /*The right and center property specify the position in which the background image needs to be placed.
+        first value is the position horizontally and the second value is the position vertically
+    */
+    background: white url(../images/search.png) right center no-repeat;
+}
+
+.submit{
+    float: right;
+    /*Backgrund color cannot be used for the button*/
+    background: #A751D6;
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+}
