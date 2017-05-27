@@ -53,3 +53,7 @@
     font-weight: bold;
     padding: 5px;
 }
+
+.clear{
+    clear: both;
+}
