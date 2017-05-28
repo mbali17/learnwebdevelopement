@@ -1,8 +1,6 @@
 
 #container {
     width : 1050px;
-    /*Just to see element on the page.*/
-    border: 1px solid grey;
     /*To center the element on the page. we can use the margin with auto for left and the right side.*/
     margin: 0px auto;
 }
@@ -56,4 +54,43 @@
 
 .clear{
     clear: both;
+}
+#menu{
+    height: 20px;
+    background: linear-gradient(#F2EF82,#D8D83D);
+    height: 70px;
+    padding: 10px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float:left;
+    padding:0 15px;
+    height: 30px;
+    border-right:1px solid #5d12e7;
+    line-height: 30px
+}
+/*Since the last child of the menu does not have the border we need to set it to none.*/
+#menu ul li:last-child{
+    border-right: none;   
+}
+/*There is a transition for the elements which needed to be observed.*/
+#menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #5d12e7;
+    /*Transition is a browser specific property hence there should be entry for each browser supported.The 
+    third parameter in the transition property is the style of transition.*/
+    transition: font-size 0.3s ease;
+    
+}
+
+#menu ul li a:hover,#menu ul li a.active{
+    font-size:22px;
+    font-weight: bold;
+    color: #B314DB;
 }
