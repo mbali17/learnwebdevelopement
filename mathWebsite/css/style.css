@@ -1,10 +1,11 @@
-
+/*Container styling*/
 #container {
     width : 1050px;
     /*To center the element on the page. we can use the margin with auto for left and the right side.*/
     margin: 0px auto;
 }
-/*Note: An container consisting of floating elements only behaves as though there are no elments with in. Hence it collapses and the height needs to be set explicitly.*/
+/*Note: An container consisting of floating elements only behaves as though there are no elments with in. Hence it collapses and the height needs to be set explicitly. */
+/*Header styling*/
 #header{
     height: 100px;
     padding: 10px 0px;
@@ -55,8 +56,8 @@
 .clear{
     clear: both;
 }
+/*Menu styling*/
 #menu{
-    height: 20px;
     background: linear-gradient(#F2EF82,#D8D83D);
     height: 70px;
     padding: 10px 0;
@@ -93,4 +94,23 @@ ul{
     font-size:22px;
     font-weight: bold;
     color: #B314DB;
+}
+
+/*Introduction box styling*/
+#introduction{
+    background: linear-gradient(#DFF1AD,#BCEA5C);
+    padding:20px;
+    margin: 16px 0px;
+}
+
+#introduction h3{
+    font-size:45px;
+    color: #316901;
+    font-weight: normal;
+    
+}
+#introduction p{
+    color: #628F35;
+    font-size:25px;
+    text-align: justify;
 }
