@@ -86,6 +86,10 @@ ul{
     color: #5d12e7;
     /*Transition is a browser specific property hence there should be entry for each browser supported.The 
     third parameter in the transition property is the style of transition.*/
+    -webkit-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
     transition: font-size 0.3s ease;
     
 }
@@ -113,4 +117,44 @@ ul{
     color: #628F35;
     font-size:25px;
     text-align: justify;
+}
+/*side bar styling*/
+.sidebar{
+    height: 500px;
+    border: 1px solid #BAF46F;
+    border-radius: 20px;
+    width: 450px;
+    padding: 10px 30px;
+}
+
+#leftsidebar{
+    float:left;
+}
+
+#rightsidebar{
+    float: right;
+}
+#leftsidebar ul {
+    padding-top: 10px
+}
+#leftsidebar ul li{
+    padding:6px 0 0 10px;
+    list-style-image: url(../images/arrow.png);
+}
+.sidebar h3{
+    color: #B314DB;
+    font-size: 30px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #5d12e7;
+    
+}
+
+.sidebar ul li a:hover,.sidebar ul li a.active{
+    font-size:22px;
+    font-weight: bold;
+    color: #B314DB;
 }
