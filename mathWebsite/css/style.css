@@ -1,3 +1,7 @@
+body{
+    font: Arial,Helvetica,sans-serif;
+}
+
 /*Container styling*/
 #container {
     width : 1050px;
@@ -24,7 +28,11 @@
 
 #searchbox {
     float: right;
+    /*For cross browser comatibility*/
     background: linear-gradient(#E4f2B9,#B7E953);
+    background: -webkit-linear-gradient(#E4f2B9,#B7E953);
+    background: -o-linear-gradient(#E4f2B9,#B7E953);
+    background: -moz-linear-gradient(#E4f2B9,#B7E953);
     width: 400px;
     height: 50px;
     padding:15px 15px 10px 15px;
@@ -41,6 +49,7 @@
         first value is the position horizontally and the second value is the position vertically
     */
     background: white url(../images/search.png) right center no-repeat;
+    border:1px solid #C8D03E;
 }
 
 .submit{
@@ -59,6 +68,9 @@
 /*Menu styling*/
 #menu{
     background: linear-gradient(#F2EF82,#D8D83D);
+    background: -webkit-linear-gradient(#F2EF82,#D8D83D);
+    background: -o-linear-gradient(#F2EF82,#D8D83D);
+    background: -moz-linear-gradient(#F2EF82,#D8D83D);
     height: 70px;
     padding: 10px 0;
 }
@@ -103,6 +115,9 @@ ul{
 /*Introduction box styling*/
 #introduction{
     background: linear-gradient(#DFF1AD,#BCEA5C);
+    background: -webkit-linear-gradient(#DFF1AD,#BCEA5C);
+    background: -o-linear-gradient(#DFF1AD,#BCEA5C);
+    background: -moz-linear-gradient(#DFF1AD,#BCEA5C);
     padding:20px;
     margin: 16px 0px;
 }
@@ -167,4 +182,13 @@ ul{
 
 #rightsidebar ul{
     padding: 20px 0 20px 89px;
+}
+
+footer{
+    background: linear-gradient(#EFED7E,#D9D93E);
+    background: -moz-linear-gradient(#EFED7E,#D9D93E);
+    background: -o-linear-gradient(#EFED7E,#D9D93E);
+    background: -webkit-linear-gradient(#EFED7E,#D9D93E);
+    padding: 10px 30px;
+    margin-top: 15px;
 }
