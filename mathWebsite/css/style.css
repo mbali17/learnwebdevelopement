@@ -134,9 +134,6 @@ ul{
 #rightsidebar{
     float: right;
 }
-#leftsidebar ul {
-    padding-top: 10px
-}
 #leftsidebar ul li{
     padding:6px 0 0 10px;
     list-style-image: url(../images/arrow.png);
@@ -157,4 +154,17 @@ ul{
     font-size:22px;
     font-weight: bold;
     color: #B314DB;
+}
+
+#rightsidebar ul li{
+    padding-bottom:20px;
+    list-style-image: url(../images/tick.png);
+}
+
+#leftsidebar ul {
+    padding: 20px 0 20px 40px ;
+}
+
+#rightsidebar ul{
+    padding: 20px 0 20px 89px;
 }
