@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects using constructor.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- inline script -->
+        <script>
+            /*Constructors are function which takes in some parameters*/
+            function phone(make, model, warranty, color){
+                //'this' is a keyword used to refer to the object in question.
+                this.make = make;
+                this.model = model;
+                this.warranty = warranty;
+                this.color = color;
+                //defining function
+                this.extendWarranty = function(x){
+                    //This is the short hand for this.warranty = this.warranty+x;
+                    this.warranty+=x;
+                }
+            }
+            //Creating the object using new keyword.
+            var myPhone = new phone("Samsung","Galaxy s4", 12, 'black');
+            //This would no more print as object rather it prints as phone(which is the constructor name.)
+            console.log(myPhone);
+            //adding property to the object.This property is not present in other objects.
+            myPhone.conditon = 'like new';
+            //Objects inherit the properties using the prototype of the object hence to add a property or function to be present in all 
+            //other object use the protoype keyword.syntax is construtorName.prototype.property or functionname
+            phone.prototype.conditon = 'new';
+            //This would create a new object with all the values as undefined and the _proto_ object would have the new property added with th default value assigned
+            var otherPhone = new phone();
+            console.log(otherPhone);
+            
+            
+        </script>
+    </body>
+</html>
