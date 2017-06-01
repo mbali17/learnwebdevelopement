@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>alert message.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>Objects in javscript are list of properties and there vlaues.</p>
+        <!-- inline script -->
+        <script>
+            //Creating object using object literal notation.An object is a key value pair separated by coma.
+            var myPhone = {
+                make : "Apple",
+                model : "Iphone 5",
+                warranty : 12,
+            }
+            //Printing object to console.
+            console.log(myPhone);
+            //Deleting a property in the object.To delete a property in the object we use the delete keyword followed by object_name.property_name.
+            delete myPhone.warranty;
+            console.log(myPhone);
+            //Adding and updating a proprty in the object.
+            myPhone.screenSzie = '5inches';
+            myPhone.model = 'Iphone 6';
+            console.log(myPhone);
+            //the following line creates a clone of the object which are similar and changes to the object using any reference would /
+            //change the object.
+            var otherPhone = myPhone;
+            //adding another property using the new reference.
+            otherPhone.isApplePayEnabled = false;
+            console.log(otherPhone);
+            console.log(myPhone);
+        </script>
+    </body>
+</html>
