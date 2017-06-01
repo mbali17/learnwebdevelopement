@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Objects.</title>
+        <title>Objects using new operator.</title>
         <meta charset="utf-8">
     </head>
     <body>
-        <p>Objects in javscript are list of properties and there vlaues.</p>
         <!-- inline script -->
         <script>
-            //Creating object using object literal notation.An object is a key value pair separated by coma.
-            var myPhone = {
-                make : "Apple",
-                model : "Iphone 5",
-                warranty : 12,
-            }
+            //Creating object using new keyword.This creates an empty object.
+            var myPhone =new Object();
             //Printing object to console.
             console.log(myPhone);
+            //Add properties to the object.
+            myPhone.make = 'motorola';
+            myPhone.model = 'g3';
+            myPhone.color = "black"
+            myPhone.warranty= 12;
+            //all the other operations on the object remain the same.
             //Deleting a property in the object.To delete a property in the object we use the delete keyword followed by object_name.property_name.
             delete myPhone.warranty;
             console.log(myPhone);
@@ -29,7 +30,7 @@
             //adding another property using the new reference.
             otherPhone.isApplePayEnabled = false;
             console.log(otherPhone);
-            console.log(myPhone);
+            console.log(myPhone);*/
         </script>
     </body>
 </html>
