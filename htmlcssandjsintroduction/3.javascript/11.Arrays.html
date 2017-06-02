@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>alert message.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id ='display'>An array is a collection of items.</p>
+        <!-- inline script -->
+        <script type="text/javascript">
+            //1st way of creating an array and arrays in javascript are zero index based.
+            var shoppinList = ['bread','butter','jam']
+            function displayElement(x){
+                document.getElementById("display").innerHTML+='<br/>'+x;
+            }
+            //2nd way of creating an array is using the Array constructor.
+            /*var someArray = new Array('element1','element2','element3')*/ 
+            displayElement(shoppinList);
+            //delete element from an array.we can use the detle keyword followed by the arrayname[index] but this just deletes the //element and the place is still present.
+            delete shoppinList[1];
+            //This displays 2 elements with 3 comas.
+            displayElement(shoppinList);
+            //Another mehtod of completely deleting an element from the array is to use the splice method.The method accepts 2 parameters 1st param is the position to begin and the second param is the number of elements to be deleted.
+            shoppinList.splice(1,1);
+            displayElement(shoppinList);
+            //Inserrting elements from a specified position.the splice method also modifies the array content by adding new elements to the array
+            shoppinList.splice(1,0,"banana","apple");
+            displayElement(shoppinList);
+            //sorting array
+            shoppinList.sort();
+            //reversing an array
+            shoppinList.reverse();
+            //Splitting of string using the split function also returns an array.
+            //To find the length of the array we can use the length variable.
+            console.log(shoppinList.length);
+        </script>
+    </body>
+</html>
