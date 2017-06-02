@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>alert message.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>If, switch and ifelseif statements are conditional statement which execute a certain piece of code based on a certain condition.</p>
+        <p>
+            speed limit for the road:<input type="number" id="speed">
+            <button onclick="checkSpeedLimit()">Check</button>
+        </p>
+        <p>
+            Current Season:<input type="text" id="season">
+            <button onclick="checkSeason()">Check</button>
+        </p>
+        <!-- inline script -->
+        <script type="text/javascript">
+            function checkSpeedLimit(){
+                var speedEntered = document.getElementById("speed").value;
+                if(speedEntered>80){
+                    alert("The speed is too fast.");
+                }else if(speedEntered<40){
+                    alert("The speed is too slow");
+                }else{
+                    alert("The speed is just fine.");
+                }
+            }
+            function checkSeason(){
+                var season = document.getElementById('season').value.toLowerCase();
+                switch(season){
+                    case "summer":
+                        alert("It is summer!!");
+                        break;
+                    case "winter":
+                        alert("It is winter!!");
+                        break;
+                    case "autumn":
+                        alert("It is autumn!!");
+                        break;
+                    default:
+                        alert("unknown season")
+                 }
+            }
+        </script>
+    </body>
+</html>
