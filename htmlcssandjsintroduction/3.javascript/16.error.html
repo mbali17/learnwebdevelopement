@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Errors</title>
+        <meta charset="utf-8">
+        <style>
+            #error{
+                color: red;
+            }
+        </style>  
+    </head>
+    <body>
+        <p id='error'></p>
+        <script>
+            /*Errors in HTML are captured using the try/catch block.*/
+            try{
+                sum(3,4);
+            }catch(err){
+                document.getElementById("error").innerHTML=err.message;
+            }
+        </script>
+    </body>
+</html
