@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cookie.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>Cookie is a piece of information stored at the user's system and is persisted even when the page is closed</p>
+        <p id="cookies"></p>
+        <!-- inline script -->
+        <script type="text/javascript">
+           document.cookie="UserName=something";
+           document.cookie="age=26";
+           var cookie = document.cookie;
+           alert(cookie);
+           //reading individual cookie values.
+           var splitValues = cookie.split(";")
+           for(var i=0;i<splitValues.length;i++){
+               document.getElementById("cookies").innerHTML+=splitValues[i];
+           }
+        </script>
+    </body>
+</html>
