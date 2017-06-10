@@ -1,11 +1,11 @@
 # learnwebdevelopement
 This repo is used to collate all the materials built while learning web development.
 
-htmlandcssintroduction folder consists of 
-three folders 
-1)HTMl:Introduction to all the HTML elements 
-2)CSS : Introduction to CSS regards to various styling elements like fonts,transition,float etc
-3)Javascript:How to use javascript to manipulate DOM on the web page,events,errors and accepting user input displaying messages using alerts,console 
+htmlcssandjsintroduction folder consists of three folders 
+
+    HTML:Introduction to all the HTML elements 
+    CSS : Introduction to CSS regards to various styling elements like fonts,transition,float etc
+    Javascript: How to use javascript to manipulate DOM on the web page,events,errors and accepting user input displaying messages using alerts,console 
 
 MathWebsite : it is the first integrated web page built after the introduction to implement what is learnt.
     
