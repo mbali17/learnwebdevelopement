@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Window and Screen</title>
+        <style>
+            #div1{
+                background-color: #f04747;
+            }
+            #div2{
+                background-color: #4774f0;    
+            }
+            #div3{
+              background-color: #5ce155; 
+            }
+             #div4{
+                background-color: #89fa83;
+            }
+            .equal{
+                float:left;
+                margin-left: 10px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1" class="equal">div1</div>
+        <div id="div2" class="equal">div2</div>
+        <div id="div3" class="equal">div3</div>
+        <div id="div4" class="equal">div4</div>
+        <script>
+            /*Window and screen(Provides details of the screen of the system and not the browser.) are objects in the javascript that give us certain properties like width,heigh and availheight(This is the remainig height when the elements are rendered.)
+            The window height property is browser specific and would have to be written multiple times for cross browser compliance.*/
+            //Following loop divides the above divs in 1/4th of the width of the window and complete hieight of the window.
+            for(var i=1;i<=4;i++){
+                //Subtractind 10px to add margin later.
+                document.getElementById("div"+i).style.width=window.innerWidth/4-20+"px";
+                document.getElementById("div"+i).style.height=window.innerHeight+"px";
+                
+            }
+            
+        </script>
+    </body>
+</html>

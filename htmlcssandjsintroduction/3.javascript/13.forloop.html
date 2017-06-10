@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>For loop</title>
+        <meta charset="utf-8"> 
+    </head>
+    <body>
+        <p id="myParagraph">Javscript</p>
+         <script>
+            /*For loop in java script is used to iterate for a known number of times.The following loop prints from 1 to 10 each time incremented by 1*/
+            for(var i=0;i<10;i++){
+                document.getElementById("myParagraph").innerHTML+="<br/>"+i;
+            }
+            /*For loops can also be used in decremented manner as shown below.*/
+            for(var i=5;i>0;i--){
+                //the power function accepts 2 parameters the number and the power it is supposed to be raised to.
+                document.getElementById("myParagraph").innerHTML+="<br/>"+Math.pow(i,2);
+            }
+            //For loop are used to iterate over arrays as well.
+            var shoppingList = ["Bread","butter","Jam"];
+            for(var i=0;i<shoppingList.length;i++){
+                document.getElementById("myParagraph").innerHTML+="<br/>"+shoppingList[i];
+            }
+        </script>
+    </body>
+</html>

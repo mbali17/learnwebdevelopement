@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Functions.</title>
+        <style>
+            .fb{
+               background-color: #3B5998;
+               height: 100px;
+                width: auto;
+            }
+            .msf{
+                background-color: rgb(231, 247, 4);
+               height: 100px;
+                width: auto;
+            }
+            .ap{
+               background-color: #49ce4b;
+               height: 100px;
+                width: auto;
+            }
+            .grt{
+                background-color: #0d4fc8;
+               height: 100px;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fb" id="fb">
+            <p>Facebook is <span class="grt">Great</span></p>
+        </div>
+        <div class="msf" id='msf'>
+            <p>microsoft</p>
+        </div>
+        <div class="ap" id="ap">
+            <p>apple</p>
+        </div>
+        <button id='button1' onclick="swapContent('fb','msf')">swap facebook content.</button>
+        <button id='button2' onclick="swapContent('msf','ap')">swap apple content.</button>
+        <script>
+           /*Fucntions in javascript are a block of code that perform a specific action.Functions are declared using the function keyword.*/
+            //declaration of function.
+            function greet(){
+               alert("Hello!");
+           }
+           //invocation of function.Name of the function followed by "()".
+           greet();
+           //functions with parameters.
+           function greet1(message){
+               alert('Hello '+ message+"!!");
+           }
+           greet1("Sam");
+           //Returning value from the function.
+           function sum(a,b){
+               return a+b;
+           }
+           var sum = sum(10,35);
+           alert("the sum is "+sum);
+           //Swapping content onclick of button.
+           function swapContent(id1,id2){
+               var htmlOfFirstElement = document.getElementById(id1).innerHTML;
+               var htmlOfSecondElement = document.getElementById(id2).innerHTML;
+               document.getElementById(id1).innerHTML = htmlOfSecondElement;
+               document.getElementById(id2).innerHTML=htmlOfFirstElement
+           }  
+        </script>
+    </body>
+</html

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>While loop</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id='myParagraph'>A while loop is also used to iterate but, here the number of times the loop is to be iterated is not known.</p>
+        <div id="Shopping_details"></div>
+        <button onclick="shopItems()">Shop Items</button>
+        <!-- inline script -->
+        <script type="text/javascript">
+            //Let's print numbers till 5.
+            var i=0;
+            while(i<5){
+                document.getElementById("myParagraph").innerHTML+="<br/>"+i;
+                //If the value of i not incremented or changed then the loop would go on for infinite time.
+                i++;
+            }
+            /*The following function accept the budget and buys as many items as possible until the balance is zero.*/
+            function shopItems(){
+                var budget = prompt("Enter the budget for shopping.");
+                document.getElementById("Shopping_details").innerHTML="The initial budget is: "+budget;
+                var noOfItemsBought=0;
+                while(budget>0){
+                    var itemPrice =  Math.floor(Math.random()*100);
+                    if(itemPrice<=budget){
+                        noOfItemsBought++;
+                        budget-=itemPrice;
+                        document.getElementById("Shopping_details").innerHTML+="<p>Item with price: "+itemPrice +"is bought and the remaining balance is:"+budget+".</p>"
+                    }
+                }
+                document.getElementById("Shopping_details").innerHTML+="Total no of items bought: "+noOfItemsBought;
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Errors</title>
+        <meta charset="utf-8">
+        <style>
+            #error{
+                color: red;
+            }
+        </style>  
+    </head>
+    <body>
+        <p>The password entered should atleast contain 6 charachters,1 number and 1 capital letter.</p>
+        <p>Enter Password:<br/>
+            <input type='password' id='password'></p>
+        <p>Re-Enter Password:<br/>
+            <input type='password' id='password2'></p>
+        <button onclick='verifyPassword()'>submit</button>
+        <p id='error'></p>
+        <script>
+            function verifyPassword(){
+                var password = document.getElementById('password').value;
+                var password2 = document.getElementById('password2').value;
+                var errorToThrow="";
+                try{
+                    if(password.length < 6){
+                        errorToThrow+='password too short';
+                    }if(/[A-Z]/g.test(password)== false){
+                        errorToThrow+="<br/>Password should atleast have one capital letter.";
+                    }if(/[\d]/g.test(password)== false){
+                        errorToThrow+="<br/>Password should atleast have one digit.";   
+                    }
+                    //Throws is a keyword used to throw custom exception.
+                    throw errorToThrow;
+                }catch(err){
+                    document.getElementById('error').innerHTML=err;
+                }
+            }
+        </script>
+    </body>
+</html

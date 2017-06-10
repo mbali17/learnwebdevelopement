@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>alert prompt confirm.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p></p>
+        <!-- inline script -->
+        <script type="text/javascript">
+            //alert is used to display message on thes screen.
+            alert('This is the inline script');
+            //asking a question with answer aas ok or cancel.
+            var isAccepted=confirm("accept terms and conditions");
+            if(isAccepted){
+                alert("you accepted the terms and conditions");
+            }else{
+                alert("you did not accept the terms and conditions");
+            }
+            //Prompting user to enter some answer
+            var name = prompt("Enter your name");
+            alert("hi"+name);
+        </script>
+    </body>
+</html>
