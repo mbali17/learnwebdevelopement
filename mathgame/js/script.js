@@ -11,6 +11,7 @@ function initiateTimer() {
         } else {
             document.getElementById('gameover').style.display = 'block';
             document.getElementById('totalscore').innerHTML = document.getElementById('scorecvalue').innerHTML;
+            document.getElementById('timeremaining').style.display = 'none';
             clearInterval(gameCounter);
         }
     }, 1000);
@@ -30,7 +31,15 @@ function displayAnswers(answers) {
         }
     }
 }
-
+//Display the element selected by the id.
+function show(id){
+    document.getElementById(id).style.display = 'block';
+}
+//hide the element identified by the id.
+function hide(id){
+    document.getElementById(id).style.display = 'none';
+}
+//increments the score by one.
 function incrementScore(){
     var currentScore = document.getElementById('scorecvalue').innerHTML;
      document.getElementById('scorecvalue').innerHTML =  parseInt(currentScore)+1 ;
@@ -39,12 +48,23 @@ function incrementScore(){
 //TODO:Displaying appropriate messages.
 function validateAnswer(choiceSelected){
     if( parseInt(choiceSelected) === corrrectAnswer){
+        hide('wrong');
+        show('correct');
+        setTimeout(function(){
+            hide('correct');
+        },1000)
         incrementScore();
         generateQuestionAndAnswer();
     }else{
-        console.log("WRONG ANSWER!!!")
+        console.log("WRONG ANSWER!!!");
+        hide('correct');
+        show('wrong');
+        setTimeout(function(){
+            hide('wrong');
+        },1000)
     }
 }
+
 //logic:Generate two random numbers between 1 and 10;
 function generateQuestionAndAnswer(){
     var firstNumber = Math.ceil(Math.random()*10);
