@@ -5,7 +5,7 @@ var isPlaying = true;
 //This function starts the timer for a period of 60 sec and decrements the value by one every second.
 //once the timer has expired the game over message is shown.
 function initiateTimer() {
-    var maxTime = 10, gameCounter = setInterval(function () {
+    var maxTime = 60, gameCounter = setInterval(function () {
         if (maxTime >0) {
             maxTime--;
             document.getElementById('timer').innerHTML = maxTime;
