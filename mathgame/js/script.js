@@ -1,10 +1,11 @@
 //gloabal variable
 var corrrectAnswer;
+var isPlaying = true;
 
 //This function starts the timer for a period of 60 sec and decrements the value by one every second.
 //once the timer has expired the game over message is shown.
 function initiateTimer() {
-    var maxTime = 60, gameCounter = setInterval(function () {
+    var maxTime = 10, gameCounter = setInterval(function () {
         if (maxTime >0) {
             maxTime--;
             document.getElementById('timer').innerHTML = maxTime;
@@ -12,6 +13,7 @@ function initiateTimer() {
             document.getElementById('gameover').style.display = 'block';
             document.getElementById('totalscore').innerHTML = document.getElementById('scorecvalue').innerHTML;
             document.getElementById('timeremaining').style.display = 'none';
+            isPlaying=false;
             clearInterval(gameCounter);
         }
     }, 1000);
@@ -47,21 +49,23 @@ function incrementScore(){
 //Validates the answer,increments score,generate next question and choice.
 //TODO:Displaying appropriate messages.
 function validateAnswer(choiceSelected){
-    if( parseInt(choiceSelected) === corrrectAnswer){
-        hide('wrong');
-        show('correct');
-        setTimeout(function(){
-            hide('correct');
-        },1000)
-        incrementScore();
-        generateQuestionAndAnswer();
-    }else{
-        console.log("WRONG ANSWER!!!");
-        hide('correct');
-        show('wrong');
-        setTimeout(function(){
+    if(isPlaying){
+        if( parseInt(choiceSelected) === corrrectAnswer){
             hide('wrong');
-        },1000)
+            show('correct');
+            setTimeout(function(){
+                hide('correct');
+            },1000)
+            incrementScore();
+            generateQuestionAndAnswer();
+        }else{
+            console.log("WRONG ANSWER!!!");
+            hide('correct');
+            show('wrong');
+            setTimeout(function(){
+                hide('wrong');
+            },1000)
+        }
     }
 }
 
@@ -90,10 +94,10 @@ startOrResetButton.onclick=function(){
         initiateTimer();
         generateQuestionAndAnswer();
         for (var i = 1;i <= 4;i++){
-        document.getElementById("choice"+i).onclick = function(){
-           validateAnswer(this.innerHTML);
+            document.getElementById("choice"+i).onclick = function(){
+                validateAnswer(this.innerHTML);
+            };
         }
-    }
     }
 }
 
