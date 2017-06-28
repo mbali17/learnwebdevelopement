@@ -1,7 +1,7 @@
 # learnwebdevelopement
 This repo is used to collate all the materials built while learning web development.
 
-htmlcssandjsintroduction folder consists of three folders 
+webtechnologies folder consists of three folders 
 
     HTML:Introduction to all the HTML elements 
     CSS : Introduction to CSS regards to various styling elements like fonts,transition,float etc
