@@ -14,3 +14,8 @@ MathWebsite : it is the first integrated web page built after the introduction t
     css : CSS written for the webpage
     
     images : used for the webpage.
+Mathgame : A multiplation game built using html css and javacript 
+    
+    html : The markup for the webpage.
+    css : Styling for the webpage.
+    js : the javascript used for the application.
