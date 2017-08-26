@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+        <!--Javascript library can be referenced in two ways. 1) Download the file and reference using the script src tag or using 
+            any of the CDN like microsoft or google -->
+        <!--Referencing the library that is donloaded <script src="path_of_the_downloaded_file">  -->
+        <!--Referencing using the CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <p> Jquery is a javasctipt library consisting of functions and helpers to make the javascript experience much better.        </p>
+        <script>
+            /*hiding the Paragraph present in the page.
+                It is always better to wrap the piece of code in a function called ready
+                The shorter version of ready function is $(function(){
+                
+                }).This ensures that the piece of code inluded is executed only when the page is completely loaded.
+            */
+            $(document).ready(function(){
+                $("p").hide();    
+            })
+            
+        </script>
+    </body>
+</html>
