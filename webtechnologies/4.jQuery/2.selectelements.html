@@ -23,6 +23,8 @@
             $("div:last-child")
         11)selecting first and lastchild 
             $("div:first-child,div:last-child")
+        12) select elements with href 
+            $("[href]")
 -->
 <html>
   <head>
@@ -224,14 +226,17 @@
         
         $("[href]").css("color","red");
         
+        //    The following line selects the first and the last child of all the lists present.
         $("li:first-child, li:last-child").css("background-color","#bbf362");
-        
+        //Select even rows of a table.
         $("tr:even").css("background-color","#e1d446");
+        //Select odd rows of a table.    
         $("tr:odd").css("background-color","#811c90");
-        
+        //select all inputs in a page.
         $(":input").css("background-color","#1da492");
+        //select all submit buttons; Note: letter 's' in submit is capital.
         $(":Submit").css("background-color","#7979eb");
-        
+        //select all the divs that has a table
         $("div:has(table)").css("background-color","rgba( 107, 180, 198, 0.697 )");
       }
        );
